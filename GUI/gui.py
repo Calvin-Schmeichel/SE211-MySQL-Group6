@@ -12,8 +12,17 @@ def handle_purchase():
     receipt = f"Receipt:\nEmail: {email}\nT-Shirt Color: {color}\nSize: {size}\nQuantity: {quantity}"
     print(receipt)
 
+    print((user_email.get()))
+    """
+    print(f"INSERT INTO Customers (Fname, Lname, Phone, Email) VALUES ('{user_FirstName.get()}', '{user_LastName.get()}', '{user_Phone.get()}', '{user_email.get()}');")
+    mycursor.execute(f"INSERT INTO Customers (Fname, Lname, Phone, Email) VALUES ('{user_FirstName.get()}', '{user_LastName.get()}', '{user_Phone.get()}', '{user_email.get()}');")
+    printsql()
+    """
     # Clear inputs for next entry
     user_email.delete(0, tk.END)
+
+    
+
 
 # Create the main window
 root = tk.Tk()
@@ -23,6 +32,22 @@ root.title("T-Shirt Purchase")
 tk.Label(root, text="Enter your email:").pack()
 user_email = tk.Entry(root)
 user_email.pack()
+
+# First Name Input
+tk.Label(root, text="Enter your First Name:").pack()
+user_FirstName = tk.Entry(root)
+user_FirstName.pack()
+
+# Last Name Input
+tk.Label(root, text="Enter your Last Name:").pack()
+user_LastName = tk.Entry(root)
+user_LastName.pack()
+
+# Phone Input
+tk.Label(root, text="Enter your Phone Number:").pack()
+user_Phone = tk.Entry(root)
+user_Phone.pack()
+
 
 # T-shirt color selection
 color_var = tk.StringVar()

@@ -145,5 +145,5 @@ Please note that further improvements, such as error handling and data validatio
 - [We used Python with some third party libraries to retrive and update data on the database](https://www.python.org/)
 
 #### GUI design: 20 points 
-- [GUI Code]()
+- [GUI Code](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/0665e6ef0a55db13c4ef5082909b12dffbd65633/GUI/GUI_FINAL.py)
 - ![MySQL GUI Live Demo Running](https://youtu.be/Fbay-wKbDds)

@@ -132,7 +132,7 @@ Please note that further improvements, such as error handling and data validatio
 ### Database Grading Criteria:  
 
 #### Report writing: 10 points  
-
+- We used this [GitHub Repo README](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/e6fc2bd99f136840379c2997ce2a38efd672574a/README.md) as our report writeup
 #### Database design (schema, models, and normalization): 20 points  
 
 #### Database implementation: 30 points  

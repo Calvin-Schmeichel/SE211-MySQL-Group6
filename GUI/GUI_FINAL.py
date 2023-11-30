@@ -1,9 +1,14 @@
+#We import all of the necessary libraries for our python script
+#mysql.connector is for our python script to interface with our MySQL DB
 import mysql.connector
+#We use tkinter for the GUI for the customer to use
 import tkinter as tk
 from tkinter import simpledialog, messagebox
+#We use datetime and random for help with data generation
 import datetime
 import random
 
+#We establish a connection with our locally hosted DB
 db = mysql.connector.connect(
     host="127.0.0.1",
     port="3307",
@@ -12,23 +17,24 @@ db = mysql.connector.connect(
     database="testdatabase"
     )
 
-#mycursor = db.cursor()
+#We use the my cursor var to store MySQL Queries
 mycursor = db.cursor(buffered=True)
 
-
+#This function is used to quickly print the mycursor data to the terminal
 def printsql():
     for x in mycursor:
         print(x)    
 
-
+#This function uses mysql.connector commands to build and configure our DB
 def GenerateDB():
 
 
-
+    #We delete the DB and rebuild it from scratch (For the sake of the demo to have a clean start) the DB is named "myStore"
     mycursor.execute("DROP DATABASE IF EXISTS myStore;")
     mycursor.execute("CREATE DATABASE myStore;")
     mycursor.execute("USE myStore;")
 
+    #We then generate all of the tables (Customers, Products, Tracking, Orders, Stock, Payment, Cart)
     mycursor.execute("CREATE TABLE Customers(ID INT PRIMARY KEY AUTO_INCREMENT,Fname VARCHAR(40) NOT NULL,Lname VARCHAR(40),Phone VARCHAR(15) NOT NULL,Email VARCHAR(40));")
     mycursor.execute("CREATE TABLE Products(ID INT PRIMARY KEY AUTO_INCREMENT,Color VARCHAR(40),Size VARCHAR(40) NOT NULL,Brand VARCHAR(40));")
     mycursor.execute("CREATE TABLE Tracking(ID INT PRIMARY KEY AUTO_INCREMENT,DeliveryDate DATE NOT NULL,DeliveryAddress VARCHAR(200),Status VARCHAR(100),TrackingID VARCHAR(255) NOT NULL UNIQUE);")
@@ -37,18 +43,22 @@ def GenerateDB():
     mycursor.execute("CREATE TABLE Payment(OrderID INT NOT NULL,CreditCardNumber BIGINT,FOREIGN KEY (OrderID) REFERENCES Orders(ID));")
     mycursor.execute("CREATE TABLE Cart (CustomerID INT NOT NULL,ProductID INT NOT NULL,Quantity INT NOT NULL,Datetime VARCHAR(50),FOREIGN KEY (CustomerID) REFERENCES Customers(ID),FOREIGN KEY (ProductID) REFERENCES Products(ID));")
 
+    #We then insert our mock T-shirt data into the appropriate table and stock
     mycursor.execute("INSERT INTO Products (Color, Size, Brand)VALUES ('Red', 'Large', 'Calvin Klein'),('Red', 'Medium', 'Calvin Klein'),('Red', 'Small', 'Calvin Klein'),('Blue', 'Large', 'Calvin Klein'),('Blue', 'Medium', 'Calvin Klein'),('Blue', 'Small', 'Calvin Klein'),('Green', 'Large', 'Calvin Klein'),('Green', 'Medium', 'Calvin Klein'),('Green', 'Small', 'Calvin Klein'),('Yellow', 'Large', 'Calvin Klein'),('Yellow', 'Medium', 'Calvin Klein'),('Yellow', 'Small', 'Calvin Klein');")
     mycursor.execute("INSERT INTO Stock (ProductID, Quantity) VALUES (1, 100),(2, 100),(3, 100),(4, 100),(5, 100),(6, 100),(7, 100),(8, 100),(9, 100),(10, 100),(11, 100),(12, 100);")
 
+    #We then insert our mock customer data for demo purposes
     mycursor.execute("INSERT INTO Customers (Fname, Lname, Phone, Email) VALUES ('John', 'Doe', '123-456-7890', 'john.doee@example.com');")
     mycursor.execute("INSERT INTO Customers (Fname, Lname, Phone, Email) VALUES ('John', 'Doe', '123-456-7890', 'john.doe@example.com');")
-    mycursor.execute("select* from Customers;")
 
+    #If everything builds correctly we will confirm in the terminal
     print("Database Generated")
 
 
-# Function to handle the purchase and generate receipt
+#Function to handle the purchase and generate receipt
 def handle_purchase():
+
+    #For each table entry we will be using the data saved from the GUI to format our SQL commands and insert the data into the tables 
        
     #Generate Customer Entry
     print("Generate Customer Entry")
@@ -97,12 +107,12 @@ def handle_purchase():
     printsql()
 
 
-
+    #Once the customers order is processed we then can make the receipt
     make_receipt()
 
     
     
-
+#This function generates a receipt based off of the users data 
 def make_receipt():
 
     print("===========================================================================")
@@ -113,10 +123,13 @@ def make_receipt():
     print(f"This purchase was made with {user_CreditCard.get()} and plans to arrive at {user_Address.get()} on {str((datetime.date.today() + datetime.timedelta(days=7)))}")
 
 
-
+    #Once the receipt is printed we exit the script
     exit()
 
+#The script starts by generating the database
 GenerateDB()
+
+#Once the database is 
 
 # Create the main window
 root = tk.Tk()

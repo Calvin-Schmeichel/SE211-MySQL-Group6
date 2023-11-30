@@ -1,4 +1,25 @@
 # SE211 | Group6 | MySQL GitHub README
+---
+### Database Grading Criteria:  
+
+#### Report writing: 10 points  
+- We used this [GitHub Repo README](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/e6fc2bd99f136840379c2997ce2a38efd672574a/README.md) as our report writeup
+#### Database design (schema, models, and normalization): 20 points
+- [Database Schema](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/tree/main#database-schema)
+- [.sql Script with normalization and models](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/MySQL/MySQLScriptFINAL.sql)
+
+#### Database implementation: 30 points
+- [We used MySQL Workbench to implement our database](https://www.mysql.com/products/workbench/)
+- [We also leveraged the Python MySQl Connector to interface with the database](https://www.mysql.com/products/connector/)
+
+#### Database operations included (retrieval and update): 20 points
+- [We used Python with some third party libraries to retrive and update data on the database](https://www.python.org/)
+
+#### GUI design: 20 points 
+- [GUI Code](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/0665e6ef0a55db13c4ef5082909b12dffbd65633/GUI/GUI_FINAL.py)
+- [MySQL GUI Live Demo Running](https://www.youtube.com/watch?v=Fbay-wKbDds)
+
+---
 
 ### Database Schema
 ```mermaid
@@ -126,24 +147,3 @@ The code consists of the following key components:
 The provided code demonstrates the use of tkinter library to create a GUI for handling T-shirt purchases. Users can enter their personal information, select the T-shirt color, size, and quantity, and generate a mock receipt. The code can serve as a basis for building a more comprehensive T-shirt purchasing system with additional features and database integration. 
 
 Please note that further improvements, such as error handling and data validation, can be implemented to enhance the user experience and ensure data integrity.
-
----
-
-### Database Grading Criteria:  
-
-#### Report writing: 10 points  
-- We used this [GitHub Repo README](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/e6fc2bd99f136840379c2997ce2a38efd672574a/README.md) as our report writeup
-#### Database design (schema, models, and normalization): 20 points
-- [Database Schema](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/tree/main#database-schema)
-- [.sql Script with normalization and models](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/MySQL/MySQLScriptFINAL.sql)
-
-#### Database implementation: 30 points
-- [We used MySQL Workbench to implement our database](https://www.mysql.com/products/workbench/)
-- [We also leveraged the Python MySQl Connector to interface with the database](https://www.mysql.com/products/connector/)
-
-#### Database operations included (retrieval and update): 20 points
-- [We used Python with some third party libraries to retrive and update data on the database](https://www.python.org/)
-
-#### GUI design: 20 points 
-- [GUI Code](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/0665e6ef0a55db13c4ef5082909b12dffbd65633/GUI/GUI_FINAL.py)
-- [MySQL GUI Live Demo Running](https://www.youtube.com/watch?v=Fbay-wKbDds)

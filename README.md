@@ -1,5 +1,65 @@
 # SE211 | Group6 | MySQL GitHub README
 
+### Database Schema
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDERS : Uses_CustomerID
+    CUSTOMER {
+        int ID PK "Primary Key"
+        string Fname "First Name"
+        string Lname "Last Name"
+        string Phone
+        string Email
+    }
+    
+    ORDERS ||--|{ PRODUCT : Uses_Orders_ProductID
+    ORDERS ||--o{ TRACKING : Uses_Orders_TrackingID
+    ORDERS {
+        int ID PK "Primary Key"
+        int CustomerID FK "Foreign Key"
+        int ProductID FK "Foreign Key"
+        date Date
+        string Status
+        int TrackingID FK "Foreign Key"
+    }
+    
+    PRODUCT ||--o{ STOCK : Uses_Orders_Primary_Key_ID
+    PRODUCT {
+        int ID PK "Primary Key"
+        string Color
+        string Size
+        string Brand
+    }
+
+	Payment ||--o{ ORDERS : Uses_Orders_Primary_Key_ID
+	Payment {
+       int OrderID FK "Foreign Key"
+        string CreditCardNumber
+    }
+    
+    TRACKING {
+        int ID PK "Primary Key"
+        date DeliveryDate
+        string DeliveryAddress
+        string Status
+    }
+    
+    STOCK {
+        int ProductID FK "Foreign Key"
+        int Quantity
+    }
+
+	CART ||--o{ ORDERS : Uses_ORDERS_CustomerID
+	CART ||--o{ ORDERS : Uses_ORDERS_ProductID
+    CART {
+        int OrderID FK "Foreign Key"
+        int CustomerID FK "Foreign Key"
+        int ProductID FK "Foreign Key"
+        int Quantity
+        datetime DateTime
+    }
+```
+
 ### Code Documentation 
 
 **Importing the required library:**  

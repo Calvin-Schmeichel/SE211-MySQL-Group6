@@ -126,3 +126,17 @@ The code consists of the following key components:
 The provided code demonstrates the use of tkinter library to create a GUI for handling T-shirt purchases. Users can enter their personal information, select the T-shirt color, size, and quantity, and generate a mock receipt. The code can serve as a basis for building a more comprehensive T-shirt purchasing system with additional features and database integration. 
 
 Please note that further improvements, such as error handling and data validation, can be implemented to enhance the user experience and ensure data integrity.
+
+---
+
+### Database Grading Criteria:  
+
+#### Report writing: 10 points  
+
+#### Database design (schema, models, and normalization): 20 points  
+
+#### Database implementation: 30 points  
+
+#### Database operations included (retrieval and update): 20 points  
+
+#### GUI design: 20 points  

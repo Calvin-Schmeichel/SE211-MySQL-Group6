@@ -112,7 +112,14 @@ The code consists of the following key components:
 
 **Purchase button:** The "Purchase" button is created using the tk.Button() method. When clicked, it calls the handle_purchase() function. 
 
-**GUI event loop:** The code enters the GUI event loop using the mainloop() method of the main window. This ensures that the GUI remains responsive and can handle user interactions. 
+**GUI event loop:** The code enters the GUI event loop using the mainloop() method of the main window. This ensures that the GUI remains responsive and can handle user interactions.
+
+### Python Script Live Demo
+
+![SE211 | Group 6 Project | MySQL GUI Live Demo Running
+](https://youtu.be/Fbay-wKbDds)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Fbay-wKbDds/0.jpg)](https://www.youtube.com/watch?v=Fbay-wKbDds)
 
 ### Conclusion
 

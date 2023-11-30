@@ -146,4 +146,4 @@ Please note that further improvements, such as error handling and data validatio
 
 #### GUI design: 20 points 
 - [GUI Code](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/0665e6ef0a55db13c4ef5082909b12dffbd65633/GUI/GUI_FINAL.py)
-- ![MySQL GUI Live Demo Running](https://youtu.be/Fbay-wKbDds)
+- ![MySQL GUI Live Demo Running](https://youtu.be/Fbay-wKbDds?si=1jznDHvL1xN3bawA)

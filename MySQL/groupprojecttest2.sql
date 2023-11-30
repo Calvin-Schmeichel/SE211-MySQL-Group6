@@ -53,6 +53,7 @@ CREATE TABLE Cart (
 CustomerID INT NOT NULL,
 ProductID INT NOT NULL,
 Quantity INT NOT NULL,
+Datetime VARCHAR(50),
 FOREIGN KEY (CustomerID) REFERENCES Customers(ID),
 FOREIGN KEY (ProductID) REFERENCES Products(ID)
 );

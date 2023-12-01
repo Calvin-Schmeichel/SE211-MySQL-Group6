@@ -93,9 +93,39 @@ We chose to go with the _**Entity-Relationship (ER) model**_. We thought it made
 - In our schema, we have tables like Customers, Products, Orders, etc., which are typical entities. The relationships are indicated through foreign keys (EX: CustomerID in Orders references ID in Customers).
 - The ER model is great for conceptualizing and designing a database at a high level, especially for relational databases like MySQL. [As represented in our Database Schema](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/tree/main#database-schema)
 
-### Normalization strategy  
+### Normalization strategy
+With out normalization strategy we wanted to make sure we:
+- Reduce redundant data waste risk space
+- Eliminate repeating groups in individual columns
+- Use primary keys to show data is in relation with one another
+- Create separate tables for each potential set of related data
 
-### Operations can be conducted on the database system  
+**[Normalization strategy MOCK IMAGE HERE]**__
+
+Those were our core values throuout the project. If we had more time we would have liked to focus on and add:
+
+- Supporting Future Scalability
+- Minimizing Null Values
+- Balancing Normalization with Performance
+- Indexing Strategy
+- Documenting the Database Schema
+- Audit and Security
+
+
+### Operations can be Conducted on the Database System
+Multiple operations can and are used on our Database System. We used [Python]((https://www.python.org/)) and a third party library called [mysql.connector](https://www.mysql.com/products/connector/) to interface with our database. Some of these operations are:
+- `DROP DATABASE`
+	- We used this operator to wipe our database clean for demo purposes.
+- `CREATE DATABASE`
+  	- We used the operator to create our database.
+- `USE`
+	- We used the operator to specify what database we are using for our demo.
+- `CREATE TABLE`
+	- We used the operator to generate our tables. (EX: Customers, Products, Tracking, Orders, Stock, Payment, Cart)
+- `INSERT INTO`
+	- We used the operator to insert our products into the database and the users input from the GUI to create and store their order and receipt.
+- `SELECT`
+	- We used the operator to search and locate the correct ID keys when inserting into our tables.
 
 ### Screen shots of your GUI  
 ---

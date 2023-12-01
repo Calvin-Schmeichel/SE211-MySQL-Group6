@@ -20,8 +20,14 @@
 - [MySQL GUI Live Demo Running](https://www.youtube.com/watch?v=Fbay-wKbDds)
 
 ---
+### Project summary  
 
-### Database Schema
+### Background and motivation  
+
+### System functions  
+
+### Schema design  
+#### Database Schema
 ```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDERS : Uses_CustomerID
@@ -80,6 +86,17 @@ erDiagram
         datetime DateTime
     }
 ```
+
+### Design models (one of the following: ER, EER, UML)  
+
+### Normalization strategy  
+
+### Operations can be conducted on the database system  
+
+### Screen shots of your GUI  
+---
+
+
 
 ### Code Documentation 
 

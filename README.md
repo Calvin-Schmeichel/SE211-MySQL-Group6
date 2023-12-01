@@ -126,12 +126,24 @@ Multiple operations can and are used on our Database System. We used [Python]((h
 ```
 - `USE`
 	- We used the operator to specify what database we are using for our demo.
+```python
+    mycursor.execute("USE myStore;")
+```
 - `CREATE TABLE`
 	- We used the operator to generate our tables. (EX: Customers, Products, Tracking, Orders, Stock, Payment, Cart)
+```python
+    mycursor.execute("CREATE TABLE Customers(ID INT PRIMARY KEY AUTO_INCREMENT,Fname VARCHAR(40) NOT NULL,Lname VARCHAR(40),Phone VARCHAR(15) NOT NULL,Email VARCHAR(40));")
+```
 - `INSERT INTO`
 	- We used the operator to insert our products into the database and the users input from the GUI to create and store their order and receipt.
+```python
+    mycursor.execute("INSERT INTO Products (Color, Size, Brand)VALUES ('Red', 'Large', 'Calvin Klein'),('Red', 'Medium', 'Calvin Klein'),('Red', 'Small', 'Calvin Klein'),('Blue', 'Large', 'Calvin Klein'),('Blue', 'Medium', 'Calvin Klein'),('Blue', 'Small', 'Calvin Klein'),('Green', 'Large', 'Calvin Klein'),('Green', 'Medium', 'Calvin Klein'),('Green', 'Small', 'Calvin Klein'),('Yellow', 'Large', 'Calvin Klein'),('Yellow', 'Medium', 'Calvin Klein'),('Yellow', 'Small', 'Calvin Klein');")
+```
 - `SELECT`
 	- We used the operator to search and locate the correct ID keys when inserting into our tables.
+```python
+    mycursor.execute(f"SELECT ID FROM Products WHERE Color = '{color_var.get()}' AND Size = '{size_var.get()}';")
+```
 
 ### Screen shots of your GUI  
 ---

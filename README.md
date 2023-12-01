@@ -116,8 +116,14 @@ Those were our core values throuout the project. If we had more time we would ha
 Multiple operations can and are used on our Database System. We used [Python]((https://www.python.org/)) and a third party library called [mysql.connector](https://www.mysql.com/products/connector/) to interface with our database. Some of these operations are:
 - `DROP DATABASE`
 	- We used this operator to wipe our database clean for demo purposes.
+```python
+    mycursor.execute("DROP DATABASE IF EXISTS myStore;")
+```
 - `CREATE DATABASE`
   	- We used the operator to create our database.
+```python
+    mycursor.execute("CREATE DATABASE myStore;")
+```
 - `USE`
 	- We used the operator to specify what database we are using for our demo.
 - `CREATE TABLE`

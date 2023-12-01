@@ -20,11 +20,11 @@
 - [MySQL GUI Live Demo Running](https://www.youtube.com/watch?v=Fbay-wKbDds)
 
 ---
-### Project summary  
+### Project Summary  
 
-### Background and motivation  
+### Background and Motivation  
 
-### System functions  
+### System Functions  
 
 ### Schema design  
 #### Database Schema
@@ -87,7 +87,11 @@ erDiagram
     }
 ```
 
-### Design models (one of the following: ER, EER, UML)  
+### Design models (one of the following: ER, EER, UML)
+We chose to go with the _**Entity-Relationship (ER) model**_. We thought it made the most sense for our project since _ER_:
+- Is primarily used for database design. It represents data in a database as entities and the relationships between these entities.
+- In our schema, we have tables like Customers, Products, Orders, etc., which are typical entities. The relationships are indicated through foreign keys (EX: CustomerID in Orders references ID in Customers).
+- The ER model is great for conceptualizing and designing a database at a high level, especially for relational databases like MySQL. [As represented in our Database Schema](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/tree/main#database-schema)
 
 ### Normalization strategy  
 

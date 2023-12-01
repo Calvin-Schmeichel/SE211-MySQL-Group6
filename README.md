@@ -145,7 +145,52 @@ Multiple operations can and are used on our Database System. We used [Python]((h
     mycursor.execute(f"SELECT ID FROM Products WHERE Color = '{color_var.get()}' AND Size = '{size_var.get()}';")
 ```
 
-### Screen shots of your GUI  
+### Screen shots of your GUI
+
+**Example input:**
+```Plain Text
+CalvinSchmeichel@SCSU.com
+Calvin
+Schmeichel
+3203080121
+720 4th Ave S, St Cloud, MN 56301
+374245455400126
+```
+
+GUI SCREEN SHOT HERE
+
+**Terminal Output:**
+```Terminal Output
+Database Generated
+Generate Customer Entry
+(1, 'John', 'Doe', '123-456-7890', 'john.doee@example.com')
+(2, 'John', 'Doe', '123-456-7890', 'john.doe@example.com')
+(3, 'Calvin', 'Schmeichel', '3203080121', 'CalvinSchmeichel@SCSU.com\n')
+Generate Tracking Entry
+(1, datetime.date(2023, 12, 7), '720 4th Ave S, St Cloud, MN 56301\n', 'In Transit', 'SLMI98YFA3')
+Generate Order Entry
+4
+(1, 3, 4, datetime.datetime(2023, 12, 7, 0, 0), 'Processing', 1)
+Generate Cart Entry
+(3, 4, 5, '2023-11-30')
+Generate Payment Entry
+(1, 374245455400126)
+===========================================================================
+Making Receipt
+===========================================================================
+Thank you for shopping with us! Here is your Receipt!
+Calvin Schmeichel bought 5 Large Blue T-Shirt(s) today (2023-11-30)
+This purchase was made with 374245455400126 and plans to arrive at 720 4th Ave S, St Cloud, MN 56301
+ on 2023-12-07
+```
+
+
+#### Python Script Live Demo
+
+![SE211 | Group 6 Project | MySQL GUI Live Demo Running
+](https://youtu.be/Fbay-wKbDds)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Fbay-wKbDds/0.jpg)](https://www.youtube.com/watch?v=Fbay-wKbDds)
 ---
 
 
@@ -204,12 +249,7 @@ The code consists of the following key components:
 
 **GUI event loop:** The code enters the GUI event loop using the mainloop() method of the main window. This ensures that the GUI remains responsive and can handle user interactions.
 
-### Python Script Live Demo
 
-![SE211 | Group 6 Project | MySQL GUI Live Demo Running
-](https://youtu.be/Fbay-wKbDds)
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Fbay-wKbDds/0.jpg)](https://www.youtube.com/watch?v=Fbay-wKbDds)
 
 ### Conclusion
 

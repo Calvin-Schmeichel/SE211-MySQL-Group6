@@ -75,7 +75,7 @@ The code consists of the following key components:
 #### Database Schema
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ ORDERS : Uses_CustomerID
+    CUSTOMER ||--o{ ORDERS : Uses_Customers_Primary_Key_ID
     CUSTOMER {
         int ID PK "Primary Key"
         string Fname "First Name"

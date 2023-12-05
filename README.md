@@ -252,7 +252,7 @@ This purchase was made with 374245455400126 and plans to arrive at 720 4th Ave S
 There are a few things we would like to add in the future.
 
 - An expanded on GUI: For me (Calvin Schmeichel) is a Cybersecurity major I could only leverage knowledge known from my beginner Python class. But I think with more time we could leverge other tools such as a web GUI client to allow for more dynamic GUI that you would see like on Amazon.com.
-- 
+- Another idea we had was to run our MySQL instance on a Docker Container Using GitHub. I (Calvin Schmeichel) made and [example guide](README_Resources/MySQL%Docker%Container%Lab%Setup%SOP.md) on how to set one up which is linked in this repo.
 
 
 

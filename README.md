@@ -1,7 +1,7 @@
 # SE211 | Group6 | MySQL GitHub README
 ---
 ### Table of Contents
-1. a
+1. [Background and Motivation](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/edit/main/README.md#background-and-motivation)
 2. a
 3. a
 4. a

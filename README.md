@@ -243,7 +243,15 @@ This purchase was made with 374245455400126 and plans to arrive at 720 4th Ave S
 ](https://youtu.be/Fbay-wKbDds)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Fbay-wKbDds/0.jpg)](https://www.youtube.com/watch?v=Fbay-wKbDds)
+
 ---
+### Future Works
+
+There are a few things we would like to add in the future.
+
+- An expanded on GUI: For me (Calvin Schmeichel) is a Cybersecurity major I could only leverage knowledge known from my beginner Python class. But I think with more time we could leverge other tools such as a web GUI client to allow for more dynamic GUI that you would see like on Amazon.com.
+- 
+
 
 
 

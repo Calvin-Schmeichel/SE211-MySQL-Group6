@@ -251,8 +251,13 @@ This purchase was made with 374245455400126 and plans to arrive at 720 4th Ave S
 
 There are a few things we would like to add in the future.
 
-- An expanded on GUI: For me (Calvin Schmeichel) is a Cybersecurity major I could only leverage knowledge known from my beginner Python class. But I think with more time we could leverge other tools such as a web GUI client to allow for more dynamic GUI that you would see like on Amazon.com.
-- Another idea we had was to run our MySQL instance on a Docker Container Using GitHub. I (Calvin Schmeichel) made and [example guide](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README_Resources/MySQL%20Docker%20Container%20Lab%20Setup%20SOP.md) on how to set one up which is linked in this repo.
+- An expanded on GUI: For me (Calvin Schmeichel) is a Cybersecurity major I could only leverage knowledge known from my beginner Python class. But I think with more time we could leverage other tools such as a web GUI client to allow for more dynamic GUI that you would see like on Amazon.com.
+- Another idea we had was to run our MySQL instance on a Docker Container Using GitHub. I (Calvin Schmeichel) made and [example guide](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README_Resources/MySQL%20Docker%20Container%20Lab%20Setup%20SOP.md) on how to set one up which is linked in this repo. We could then use that Docker methodology to create a cusotom Docker image to host in an AWS Amazon Elastic Container Registry (Amazon ECR). Then attach them to auto-matic load ballencers to increase container volume with more traffic. Below I have linked in image of a mock AWS network diagram we could use. I helped make this diagram for my Cloud computing Course and is appropriately applicable in this situation.
+
+
+<p align="center">
+  <img src="README_Resources/DockerLoadBallencersExample.png" alt="DockerLoadBallencersExample" width="500"/>
+</p>
 
 
 

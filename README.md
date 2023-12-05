@@ -276,6 +276,7 @@ Overall this was a really fun project to work on and we learnd a lot more about 
 
 #### Report writing: 10 points  
 - We used this [GitHub Repo README](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/e6fc2bd99f136840379c2997ce2a38efd672574a/README.md) as our report writeup
+- We also made a [general PowerPoint](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README_Resources/SE211%20Group%206%20Final%20Slides.pdf) on our project too
 #### Database design (schema, models, and normalization): 20 points
 - [Database Schema](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/tree/main#database-schema)
 - [.sql Script with normalization and models](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/MySQL/MySQLScriptFINAL.sql)

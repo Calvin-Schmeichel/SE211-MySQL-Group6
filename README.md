@@ -272,6 +272,8 @@ The provided code demonstrates the use of tkinter library to create a GUI for ha
 
 Please note that further improvements, such as error handling and data validation, can be implemented to enhance the user experience and ensure data integrity.
 
+Overall this was a really fun project to work on and we learnd a lot more about MySQL and Python. These skills will be very valuable in the workplace after we graduate!
+
 #### Report writing: 10 points  
 - We used this [GitHub Repo README](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/e6fc2bd99f136840379c2997ce2a38efd672574a/README.md) as our report writeup
 #### Database design (schema, models, and normalization): 20 points

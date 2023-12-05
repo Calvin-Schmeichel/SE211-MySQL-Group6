@@ -205,7 +205,9 @@ Schmeichel
 374245455400126
 ```
 
-GUI SCREEN SHOT HERE
+<p align="center">
+  <img src="README_Resources/GUIExample.png" alt="GUIExample" width="500"/>
+</p>
 
 **Terminal Output:**
 ```Terminal Output

@@ -2,12 +2,14 @@
 ---
 ### Table of Contents
 1. [Background and Motivation](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/tree/main#background-and-motivation)
-2. a
-3. a
-4. a
-5. a
-6. a
-7. a
+2. [System Functions](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#system-functions)
+3. [Schema Design](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#schema-design)
+4. [Design Models](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#design-models-one-of-the-following-er-eer-uml)
+5. [Normalization strategy](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#normalization-strategy)
+6. [Operations can be Conducted on the Database System](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#operations-can-be-conducted-on-the-database-system)
+7. [Screen shots of your GUI](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#screen-shots-of-your-gui)
+8. [Future Works](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#future-works)
+9. [Conclusion & Database Grading Criteria](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#conclusion--database-grading-criteria)
 
 ---
 ### Project Summary  

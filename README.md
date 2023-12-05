@@ -290,3 +290,6 @@ Overall this was a really fun project to work on and we learnd a lot more about 
 #### GUI design: 20 points 
 - [GUI Code](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/0665e6ef0a55db13c4ef5082909b12dffbd65633/GUI/GUI_FINAL.py)
 - [MySQL GUI Live Demo Running](https://www.youtube.com/watch?v=Fbay-wKbDds)
+- [GUI Image](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README_Resources/GUIExample.png)
+- [GUI Receipt](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README_Resources/GUIReceipt.png)
+- [GUI Section](https://github.com/Calvin-Schmeichel/SE211-MySQL-Group6/blob/main/README.md#screen-shots-of-your-gui)

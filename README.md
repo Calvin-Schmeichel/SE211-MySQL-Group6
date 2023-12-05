@@ -147,7 +147,9 @@ With out normalization strategy we wanted to make sure we:
 - Use primary keys to show data is in relation with one another
 - Create separate tables for each potential set of related data
 
-**[Normalization strategy MOCK IMAGE HERE]**__
+<p align="center">
+  <img src="README_Resources/NormalizationStrategy.png" alt="NormalizationStrategy" width="700"/>
+</p>
 
 Those were our core values throuout the project. If we had more time we would have liked to focus on and add:
 
